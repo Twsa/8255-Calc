@@ -1,0 +1,72 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="300" Width="460">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="0,0,0,0" VerticalAlignment="Top" Width="35">
+            <TextBlock HorizontalAlignment="Left" Height="15" Margin="0,0,0,20" TextWrapping="Wrap" VerticalAlignment="Center" Width="35" Text="A15" RenderTransformOrigin="0.959,-0.369"/>
+            <ComboBox Name="A15_ComboBox" HorizontalAlignment="Left" Width="35" Height="20" VerticalAlignment="Bottom">
+                <ComboBoxItem IsSelected="True">1</ComboBoxItem>
+                <ComboBoxItem>0</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="35,0,0,0" VerticalAlignment="Top" Width="35">
+            <TextBlock HorizontalAlignment="Left" Height="15" Margin="0,0,0,20" TextWrapping="Wrap" VerticalAlignment="Center" Width="35" RenderTransformOrigin="0.959,-0.369"><Run Text="A"/><Run Text="14"/></TextBlock>
+            <ComboBox Name="A14_ComboBox" HorizontalAlignment="Left" Width="35" Height="20" VerticalAlignment="Bottom">
+                <ComboBoxItem IsSelected="True">1</ComboBoxItem>
+                <ComboBoxItem>0</ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="70,0,0,0" VerticalAlignment="Top" Width="35">
+            <TextBlock HorizontalAlignment="Left" Height="15" Margin="0,0,0,20" TextWrapping="Wrap" VerticalAlignment="Center" Width="35" RenderTransformOrigin="0.959,-0.369"><Run Text="A"/><Run Text="13"/></TextBlock>
+            <ComboBox Name="A13_ComboBox" HorizontalAlignment="Left" Width="35" Height="20" VerticalAlignment="Bottom">
+                <ComboBoxItem IsSelected="True" Content="1"/>
+                <ComboBoxItem Content="0"/>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="105,0,0,0" VerticalAlignment="Top" Width="70">
+            <TextBlock HorizontalAlignment="Left" Height="15" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.959,-0.369"><Run Text="A"/><Run Text="12-A2"/></TextBlock>
+            <ComboBox Name="A12_2_ComboBox" HorizontalAlignment="Left" Width="70" Height="20" VerticalAlignment="Bottom">
+                <ComboBoxItem IsSelected="True" Content="..."/>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="175,0,0,0" VerticalAlignment="Top" Width="35">
+            <TextBlock HorizontalAlignment="Left" Height="15" Margin="0,0,0,20" TextWrapping="Wrap" VerticalAlignment="Center" Width="35" RenderTransformOrigin="0.959,-0.369"><Run Text="A"/><Run Text="1"/></TextBlock>
+            <ComboBox Name="A1_ComboBox" HorizontalAlignment="Left" Width="35" Height="20" VerticalAlignment="Bottom">
+                <ComboBoxItem IsSelected="True" Content="1"/>
+                <ComboBoxItem Content="0"/>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="210,0,0,0" VerticalAlignment="Top" Width="35">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="29*"/>
+                <RowDefinition Height="6*"/>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Left" Height="15" Margin="0,0,0,14" TextWrapping="Wrap" VerticalAlignment="Center" Width="35" RenderTransformOrigin="0.959,-0.369"><Run Text="A"/><Run Text="0"/></TextBlock>
+            <ComboBox Name="A0_ComboBox" HorizontalAlignment="Left" Width="35" Height="20" VerticalAlignment="Bottom" Grid.RowSpan="2">
+                <ComboBoxItem IsSelected="True" Content="1"/>
+                <ComboBoxItem Content="0"/>
+            </ComboBox>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="35" Margin="3,0,-38,0" VerticalAlignment="Top" Width="35" Grid.Column="2"/>
+        <TextBlock HorizontalAlignment="Left" Height="13" Margin="0,35,0,0" TextWrapping="Wrap" Text="C" VerticalAlignment="Top" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Height="13" Margin="35,35,0,0" TextWrapping="Wrap" Text="B" VerticalAlignment="Top" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Height="13" Margin="70,35,0,0" TextWrapping="Wrap" Text="A" VerticalAlignment="Top" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Height="15.999" Margin="122.05,62.334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="24.283" Text="到"/>
+        <Button Name="Cac_Button" Content="计算" HorizontalAlignment="Left" Height="26" Margin="78.833,150.666,0,0" VerticalAlignment="Top" Width="80" Click="Cac_Click"/>
+        <TextBlock Name="First_Text" HorizontalAlignment="Left" Height="15.999" Margin="78.833,62.334,0,0" TextWrapping="Wrap" Text="First" VerticalAlignment="Top" Width="38.217"/>
+        <TextBlock Name="Last_Text" HorizontalAlignment="Left" Height="15.999" Margin="146.333,62.334,0,0" TextWrapping="Wrap" Text="Last" VerticalAlignment="Top" Width="52"/>
+        <TextBlock HorizontalAlignment="Left" Height="269" Margin="280,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="162" Foreground="Black"><Run Text="A1&#x9;A0&#x9;功能"/><LineBreak/><Run Text="0&#x9;0"/><Run Text="&#x9;选A端口"/><LineBreak/><Run Text="0&#x9;1&#x9;选B端口"/><LineBreak/><Run Text="1&#x9;0&#x9;选C端口"/><LineBreak/><Run Text=""/><LineBreak/><Run Text="A15&#x9;A14&#x9;A13"/><LineBreak/><Run Text="C&#x9;B&#x9;A&#x9;"/><LineBreak/><Run Text="0&#x9;0&#x9;0&#x9;Y0"/><LineBreak/><Run Text="0&#x9;0&#x9;1&#x9;Y1"/><LineBreak/><Run Text="0"/><Run Text="&#x9;1&#x9;0&#x9;Y2"/><LineBreak/><Run Text="0&#x9;1&#x9;1&#x9;Y3"/><LineBreak/><Run Text="1&#x9;0&#x9;0&#x9;Y4"/><LineBreak/><Run Text="1&#x9;0&#x9;1&#x9;Y5"/><LineBreak/><Run Text="1&#x9;1&#x9;0&#x9;Y6"/><LineBreak/><Run Text="1&#x9;1&#x9;1&#x9;Y7"/><Run Text="&#x9;"/></TextBlock>
+
+        <!--<Frame Name="frmMain" NavigationUIVisibility="Hidden"></Frame>-->
+    </Grid>
+</Window>
